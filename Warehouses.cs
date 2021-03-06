@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,15 +6,19 @@ namespace Inventory
 {
     class Warehouses
     {
-        private string name;
+        public int item1 { get; set; }
+        public int item2 { get; set; }
+        public int item3 { get; set; }
+        public int item4 { get; set; }
+        public int item5 { get; set; }
+        public string transType { get; set; }
+        public int trans1 { get; set; }
+        public int trans2 { get; set; }
 
-        public Warehouses()
+        public override string ToString()
         {
-            name = "No Name";
-        }
-        public Warehouses(string name)
-        {
-            this.name = name;
+            string obj = "Test";
+            return obj;
         }
     }
 }
